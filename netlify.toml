@@ -1,6 +1,6 @@
 [build]
   command = "npx prisma generate && npm run build"
-  publish = "public"
+  publish = "build/client"
   functions = "netlify/functions"
   base = "/"
 
