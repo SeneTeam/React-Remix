@@ -13,9 +13,11 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 import tailwindStylesUrl from "./styles/tailwind.css";
+import styles from "./styles/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindStylesUrl as string },
+  { rel: "stylesheet", href: styles },
 ];
 
 export const loader = async () => {
@@ -26,10 +28,8 @@ export const loader = async () => {
     },
   });
 };
-
 export default function App() {
   const data = useLoaderData<typeof loader>();
-
   return (
     <html lang="en" className="h-full">
       <head>

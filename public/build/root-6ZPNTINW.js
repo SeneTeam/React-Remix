@@ -11,7 +11,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData
-} from "/build/_shared/chunk-EHEASNIK.js";
+} from "/build/_shared/chunk-75O2R63R.js";
 import "/build/_shared/chunk-74BWT7FI.js";
 import {
   require_jsx_dev_runtime
@@ -230,6 +230,9 @@ if (import.meta) {
 var links = () => [{
   rel: "stylesheet",
   href: tailwind_default
+}, {
+  rel: "stylesheet",
+  href: tailwind_default
 }];
 function App() {
   _s2();
@@ -238,79 +241,79 @@ function App() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("meta", { charSet: "utf-8" }, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 44,
+        lineNumber: 48,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Meta, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 45,
+        lineNumber: 49,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Links, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 46,
+        lineNumber: 50,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.tsx",
-      lineNumber: 42,
+      lineNumber: 46,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("body", { className: "h-full flex flex-col bg-gradient-to-br from-pastel-yellow to-pastel-green", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Navigation, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 49,
+        lineNumber: 53,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("main", { className: "flex-grow container mx-auto px-4 py-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Outlet, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 51,
+        lineNumber: 55,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 50,
+        lineNumber: 54,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Footer, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 53,
+        lineNumber: 57,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ScrollRestoration, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 54,
+        lineNumber: 58,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("script", { dangerouslySetInnerHTML: {
         __html: `window.ENV = ${JSON.stringify(data.ENV)}`
       } }, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 55,
+        lineNumber: 59,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Scripts, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 59,
+        lineNumber: 63,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(LiveReload, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 60,
+        lineNumber: 64,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.tsx",
-      lineNumber: 48,
+      lineNumber: 52,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/root.tsx",
-    lineNumber: 41,
+    lineNumber: 45,
     columnNumber: 10
   }, this);
 }
@@ -326,4 +329,4 @@ export {
   App as default,
   links
 };
-//# sourceMappingURL=/build/root-CGO4F3BL.js.map
+//# sourceMappingURL=/build/root-6ZPNTINW.js.map
