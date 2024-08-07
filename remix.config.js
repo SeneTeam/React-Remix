@@ -1,9 +1,12 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
+  serverBuildTarget: "netlify",
+  server: "./netlify/functions/server.js",
   ignoredRouteFiles: ["**/.*"],
   serverModuleFormat: "cjs",
   tailwind: true,
-postcss: true,
+  postcss: true,
+  postcss: true,
   future: {
     v2_dev: true,
     v2_errorBoundary: true,
@@ -13,6 +16,3 @@ postcss: true,
     v2_routeConvention: true,
   },
 };
-
-
-
