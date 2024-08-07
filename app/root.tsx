@@ -12,7 +12,7 @@ import { json } from "@remix-run/node";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
-import tailwindStylesUrl from "./styles/tailwind.css";
+import tailwindStylesUrl from "./styles/tailwind.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindStylesUrl as string },
