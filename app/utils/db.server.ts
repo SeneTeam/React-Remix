@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 let db: PrismaClient;
 
 declare global {
-// eslint-disable-next-line no-var
+  // eslint-disable-next-line no-var
   var __db: PrismaClient | undefined;
 }
 
@@ -13,10 +13,11 @@ const globalForPrisma = global as unknown as { __db: PrismaClient | undefined };
 if (process.env.NODE_ENV === "production") {
   db = new PrismaClient();
 } else {
-  if (!globalForPrisma.__db) {
-    globalForPrisma.__db = new PrismaClient();
-  }
-  db = globalForPrisma.__db;
+  // if (!globalForPrisma.__db) {
+  //   globalForPrisma.__db = new PrismaClient();
+  // }
+  // db = globalForPrisma.__db;
+  db = new PrismaClient();
 }
 
 export { db };
