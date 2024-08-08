@@ -9,7 +9,7 @@ type LoginForm = {
 
 export async function register({ username, password }: LoginForm) {
   const passwordHash = await bcrypt.hash(password, 10);
-  const existingUser = await db.user.findUnique({
+  const existingUser = await db.user?.findUnique({
     where: { username },
   });
 
@@ -25,7 +25,7 @@ export async function register({ username, password }: LoginForm) {
 
 
 export async function login({ username, password }: LoginForm) {
-  const user = await db.user.findUnique({
+  const user = await db.user?.findUnique({
     where: { username },
   });
   if (!user) return null;
