@@ -15,7 +15,7 @@
     "@anthropic-ai/sdk": "^0.25.0",
     "@netlify/functions": "^2.8.1",
     "@netlify/remix-adapter": "^2.4.0",
-    "@prisma/client": "^5.8.1",
+    "@prisma/client": "^5.18.0",
     "@remix-run/css-bundle": "^2.11.1",
     "@remix-run/node": "^2.11.1",
     "@remix-run/react": "^2.11.1",
