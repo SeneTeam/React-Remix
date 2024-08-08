@@ -17,7 +17,7 @@ export async function register({ username, password }: LoginForm) {
     return null;
   }
 
-  const user = await db.user.create({
+  const user = await db.user?.create({
     data: { username, passwordHash },
   });
   return { id: user.id, username };
@@ -25,7 +25,7 @@ export async function register({ username, password }: LoginForm) {
 
 
 export async function login({ username, password }: LoginForm) {
-  const user = await db.user?.findUnique({
+  const user = await db.user.findUnique({
     where: { username },
   });
   if (!user) return null;
