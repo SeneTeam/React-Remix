@@ -8,21 +8,21 @@ type LoginForm = {
 };
 
 export async function register({ username, password }: LoginForm) {
-    const passwordHash = await bcrypt.hash(password, 10);
-    const existingUser = await db.user.findUnique({
-      where: { username },
-    });
-  
-    if (existingUser) {
-      return null;
-    }
-  
-    const user = await db.user.create({
-      data: { username, passwordHash },
-    });
-    return { id: user.id, username };
+  const passwordHash = await bcrypt.hash(password, 10);
+  const existingUser = await db.user.findUnique({
+    where: { username },
+  });
+
+  if (existingUser) {
+    return null;
   }
-  
+
+  const user = await db.user.create({
+    data: { username, passwordHash },
+  });
+  return { id: user.id, username };
+}
+
 
 export async function login({ username, password }: LoginForm) {
   const user = await db.user.findUnique({
@@ -66,10 +66,10 @@ export function getUserSession(request: Request) {
 }
 
 export async function getUserId(request: Request) {
-    const session = await getUserSession(request);
-    const userId = session.get("userId");
-    if (!userId || typeof userId !== "string") return null;
-    return userId;
+  const session = await getUserSession(request);
+  const userId = session.get("userId");
+  if (!userId || typeof userId !== "string") return null;
+  return userId;
 }
 
 
